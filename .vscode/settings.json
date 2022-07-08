@@ -1,0 +1,7 @@
+{
+  "code-runner.executorMap": {
+    "c": "cd $dir &&  gcc $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c11  &&  $dir$fileNameWithoutExt"
+    //powershell连接符为|
+    //"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -lws2_32  -pthread --target=x86_64-w64-mingw -std=c11 &&  $dir$fileNameWithoutExt"
+  }
+}

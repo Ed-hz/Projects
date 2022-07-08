@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "task gcc",
+      "command": "C:/Program Files/LLVM/bin/gcc.exe",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "C:/Program Files/LLVM/bin"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "编译器: \"C:/Program Files/LLVM/bin/gcc.exe\""
+    },
+    {
+      "type": "shell",
+      "label": "task g++",
+      "command": "C:/Program Files/LLVM/bin/g++.exe",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "C:/Program Files/LLVM/bin"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "编译器: \"C:/Program Files/LLVM/bin/g++.exe\""
+    }
+  ]
+}
